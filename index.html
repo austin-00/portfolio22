@@ -292,35 +292,49 @@ document.addEventListener("DOMContentLoaded", function() {
     // Make opentab function globally accessible
     window.opentab = opentab;
     
-    // Mobile menu toggle
-    function toggleMenu() {
-        document.getElementById("nav-menu").classList.toggle("show");
-        
-        // Optional: Close menu when clicking outside
-        if (document.getElementById("nav-menu").classList.contains("show")) {
+   // Replace your existing mobile menu JavaScript with this corrected version
+
+// Mobile menu toggle
+function toggleMenu() {
+    const navMenu = document.getElementById("nav-menu");
+    const isShowing = navMenu.classList.contains("show");
+    
+    navMenu.classList.toggle("show");
+    
+    // Handle outside click listener with proper timing
+    if (!isShowing) {
+        // Menu is now showing, add listener after a small delay
+        setTimeout(() => {
             document.addEventListener("click", closeMenuOutside);
-        } else {
-            document.removeEventListener("click", closeMenuOutside);
-        }
+        }, 100);
+    } else {
+        // Menu is now hidden, remove listener
+        document.removeEventListener("click", closeMenuOutside);
     }
+}
+
+function closeMenuOutside(event) {
+    const navMenu = document.getElementById("nav-menu");
+    const menuIcon = document.querySelector(".menu-icon");
     
-    function closeMenuOutside(event) {
-        const navMenu = document.getElementById("nav-menu");
-        const menuIcon = document.querySelector(".menu-icon");
-        
-        if (!navMenu.contains(event.target) && !menuIcon.contains(event.target)) {
-            navMenu.classList.remove("show");
-            document.removeEventListener("click", closeMenuOutside);
-        }
+    // Check if click is outside both menu and menu icon
+    if (!navMenu.contains(event.target) && !menuIcon.contains(event.target)) {
+        navMenu.classList.remove("show");
+        document.removeEventListener("click", closeMenuOutside);
     }
-    
-    // Close mobile menu when clicking on nav links
-    const navLinks = document.querySelectorAll("#nav-menu li a");
-    navLinks.forEach(link => {
-        link.addEventListener("click", function() {
-            document.getElementById("nav-menu").classList.remove("show");
-        });
+}
+
+// Close mobile menu when clicking on nav links
+const navLinks = document.querySelectorAll("#nav-menu li a");
+navLinks.forEach(link => {
+    link.addEventListener("click", function() {
+        document.getElementById("nav-menu").classList.remove("show");
+        document.removeEventListener("click", closeMenuOutside);
     });
+});
+
+// Make toggleMenu function globally accessible
+window.toggleMenu = toggleMenu;
     
     // Make toggleMenu function globally accessible
     window.toggleMenu = toggleMenu;
