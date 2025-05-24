@@ -4,43 +4,643 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sound Mastering Services - Alan Austin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="services.css">
-    <script src="https://kit.fontawesome.com/a2d04a9f36.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="page-transition">
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+    
     <header id="header">
         <nav id="navbar">
-            <a href="index.html">Back To Home</a>
+            <div class="nav-container">
+                <a href="index.html" class="logo">Alan<span>Austin</span></a>
+                <a href="services.html" class="back-home">
+                    <i class="fas fa-arrow-left"></i> Back to Services
+                </a>
+            </div>
         </nav>
     </header>
 
     <div class="container">
         <h1 class="subtitle">Sound Mastering Services</h1>
-        <p style="text-align: center;">Polish your audio for professional release on all platforms.</p>
-
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; animation: fadeIn 1s ease 0.3s forwards; opacity: 0;">
+            Elevate your audio to professional standards with mastering that brings clarity, depth, and impact to your sound.
+        </p>
+        
         <div class="contact-form">
-            <h2>What I Offer</h2>
-            <ul>
-                <li>Equalization (EQ) & dynamic range enhancement</li>
-                <li>Noise reduction & clarity improvement</li>
-                <li>Stereo imaging & spatial enhancement</li>
-                <li>Loudness normalization for platforms</li>
-                <li>Format conversion: WAV, MP3, FLAC</li>
-            </ul>
-
-            <h2>Why Choose Me?</h2>
-            <p>With a trained ear and years of hands-on experience, I deliver crisp, dynamic audio ready for any audience.</p>
-
-            <h2>Tools I Use</h2>
-            <ul>
-                <li>Adobe Audition</li>
-                <li>FL Studio</li>
-                <li>iZotope Ozone</li>
-                <li>Waves Plugins</li>
-            </ul>
-
-            <p><strong>Ready to elevate your sound?</strong> <a href="contact.html">Contact me</a> to get started!</p>
+            <!-- Audio player mockup -->
+            <div class="video-mockup audio-mockup">
+                <div class="audio-player">
+                    <div class="audio-visualizer">
+                        <div class="waveform">
+                            <div class="bar bar-1"></div>
+                            <div class="bar bar-2"></div>
+                            <div class="bar bar-3"></div>
+                            <div class="bar bar-4"></div>
+                            <div class="bar bar-5"></div>
+                            <div class="bar bar-6"></div>
+                            <div class="bar bar-7"></div>
+                            <div class="bar bar-8"></div>
+                            <div class="bar bar-9"></div>
+                            <div class="bar bar-10"></div>
+                            <div class="bar bar-11"></div>
+                            <div class="bar bar-12"></div>
+                            <div class="bar bar-13"></div>
+                            <div class="bar bar-14"></div>
+                            <div class="bar bar-15"></div>
+                            <div class="bar bar-16"></div>
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="audio-controls">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="control-buttons">
+                            <i class="fas fa-play"></i>
+                            <i class="fas fa-volume-up"></i>
+                            <div class="track-info">
+                                <span class="track-name">Demo Track</span> 
+                                <span class="time">00:00 / 03:12</span>
+                            </div>
+                            <i class="fas fa-download"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="comparison-switch">
+                    <span class="switch-label before">Before</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="switch-label after">After</span>
+                </div>
+            </div>
+            
+            <div class="service-sections">
+                <div class="service-section" data-section="offers">
+                    <h2><i class="fas fa-sliders-h" style="color: var(--accent-color);"></i> What I Offer</h2>
+                    <div class="features-grid">
+                        <div class="feature-card reveal">
+                            <div class="feature-icon">
+                                <i class="fas fa-volume-up"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Dynamic Processing</h3>
+                                <p>Precision compression and limiting for balanced, consistent sound</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card reveal" style="animation-delay: 0.1s;">
+                            <div class="feature-icon">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Tonal Balance</h3>
+                                <p>Professional EQ shaping for clarity and warmth across all frequencies</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card reveal" style="animation-delay: 0.2s;">
+                            <div class="feature-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Spatial Enhancement</h3>
+                                <p>Stereo imaging and depth enhancement for immersive soundstage</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card reveal" style="animation-delay: 0.3s;">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Loudness Optimization</h3>
+                                <p>Industry-standard loudness levels for streaming platforms and broadcast</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card reveal" style="animation-delay: 0.4s;">
+                            <div class="feature-icon">
+                                <i class="fas fa-file-audio"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>High-Quality Formats</h3>
+                                <p>Delivery in various formats including lossless WAV, FLAC, and streaming-ready MP3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dual-sections">
+                    <div class="service-section half-section" data-section="tools">
+                        <h2><i class="fas fa-toolbox" style="color: var(--primary-color);"></i> Tools I Use</h2>
+                        <ul class="tools-list">
+                            <li>
+                                <img src="/api/placeholder/30/30" alt="iZotope Ozone" class="tool-icon">
+                                <span>iZotope Ozone</span>
+                            </li>
+                            <li>
+                                <img src="/api/placeholder/30/30" alt="FabFilter Pro" class="tool-icon">
+                                <span>FabFilter Pro Suite</span>
+                            </li>
+                            <li>
+                                <img src="/api/placeholder/30/30" alt="Waves Plugins" class="tool-icon">
+                                <span>Waves Plugins</span>
+                            </li>
+                            <li>
+                                <img src="/api/placeholder/30/30" alt="Pro Tools" class="tool-icon">
+                                <span>Pro Tools</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-section half-section" data-section="choose">
+                        <h2><i class="fas fa-star" style="color: var(--accent-color);"></i> Why Choose Me?</h2>
+                        <div class="why-choose-content">
+                            <p class="highlight-text">I bring technical precision and an artistic ear to every project, ensuring your music sounds its absolute best across all playback systems.</p>
+                            <ul class="benefits-list">
+                                <li><i class="fas fa-check-circle"></i> Genre-specific mastering approach</li>
+                                <li><i class="fas fa-check-circle"></i> Detailed listening and feedback</li>
+                                <li><i class="fas fa-check-circle"></i> Free revision included</li>
+                                <li><i class="fas fa-check-circle"></i> Platform-specific loudness optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-section" data-section="process">
+                <h2><i class="fas fa-tasks" style="color: var(--primary-color);"></i> My Mastering Process</h2>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Analysis</h3>
+                            <p>Thoroughly analyze your mix for tonal balance, dynamic range, and potential improvements</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Processing</h3>
+                            <p>Apply precise EQ, compression, and stereo enhancement to achieve your desired sound</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Optimization</h3>
+                            <p>Optimize loudness levels and final touches to match industry standards</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Quality Control</h3>
+                            <p>Reference check on multiple systems to ensure consistency across all playback devices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2><i class="fas fa-headphones"></i> Ready to elevate your sound?</h2>
+                    <p>Let's make your music shine with professional mastering!</p>
+                </div>
+                <a href="contact.html">
+                    <button class="btn-3d pulse-animation">Contact Me <i class="fas fa-arrow-right"></i></button>
+                </a>
+            </div>
         </div>
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script>
+        // Animation on scroll
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.reveal, .feature-card, .process-step').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Audio player interactive elements
+        const audioVisualizer = document.querySelector('.audio-visualizer');
+        const playButton = document.querySelector('.play-button');
+        const progressBar = document.querySelector('.progress');
+        const waveform = document.querySelector('.waveform');
+        const bars = document.querySelectorAll('.bar');
+        
+        audioVisualizer.addEventListener('click', function() {
+            this.classList.toggle('playing');
+            playButton.classList.toggle('hidden');
+            progressBar.style.width = '45%';
+            
+            // Toggle animation on bars
+            if (this.classList.contains('playing')) {
+                bars.forEach(bar => {
+                    bar.style.animationPlayState = 'running';
+                });
+                
+                // Toggle play/pause button in controls
+                const playControl = document.querySelector('.control-buttons .fa-play');
+                playControl.classList.replace('fa-play', 'fa-pause');
+            } else {
+                bars.forEach(bar => {
+                    bar.style.animationPlayState = 'paused';
+                });
+                
+                // Toggle play/pause button in controls
+                const playControl = document.querySelector('.control-buttons .fa-pause');
+                if (playControl) {
+                    playControl.classList.replace('fa-pause', 'fa-play');
+                }
+            }
+        });
+        
+        // Before/After switch functionality
+        const comparisonSwitch = document.querySelector('.comparison-switch input');
+        comparisonSwitch.addEventListener('change', function() {
+            const trackName = document.querySelector('.track-name');
+            if (this.checked) {
+                trackName.textContent = "Demo Track (Mastered)";
+                document.querySelector('.audio-visualizer').classList.add('mastered');
+            } else {
+                trackName.textContent = "Demo Track (Unmastered)";
+                document.querySelector('.audio-visualizer').classList.remove('mastered');
+            }
+        });
+    </script>
+    
+    <style>
+        /* Audio page specific styles */
+        .audio-mockup {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 10px;
+        }
+        
+        .audio-player {
+            position: relative;
+            width: 100%;
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .audio-visualizer {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #1e1e2a 0%, #2d2d44 100%);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .audio-visualizer::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .audio-visualizer.playing::after {
+            background: rgba(0,0,0,0.1);
+        }
+        
+        .audio-visualizer.mastered .waveform .bar {
+            --bar-color: var(--accent-color);
+            --bar-height: 1.2;
+        }
+        
+        .waveform {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            height: 60%;
+            gap: 5px;
+            z-index: 1;
+        }
+        
+        .waveform .bar {
+            --bar-color: var(--primary-color);
+            --bar-height: 1;
+            width: 4px;
+            height: calc(20px * var(--bar-height));
+            background: var(--bar-color);
+            border-radius: 2px;
+            animation: soundBars 1.5s ease infinite alternate;
+            animation-play-state: paused;
+        }
+        
+        .waveform .bar:nth-child(1) { animation-delay: -0.2s; }
+        .waveform .bar:nth-child(2) { animation-delay: -0.4s; }
+        .waveform .bar:nth-child(3) { animation-delay: -0.6s; }
+        .waveform .bar:nth-child(4) { animation-delay: -0.8s; }
+        .waveform .bar:nth-child(5) { animation-delay: -1.0s; }
+        .waveform .bar:nth-child(6) { animation-delay: -1.2s; }
+        .waveform .bar:nth-child(7) { animation-delay: -1.4s; }
+        .waveform .bar:nth-child(8) { animation-delay: -1.6s; }
+        .waveform .bar:nth-child(9) { animation-delay: -1.8s; }
+        .waveform .bar:nth-child(10) { animation-delay: -2.0s; }
+        .waveform .bar:nth-child(11) { animation-delay: -1.8s; }
+        .waveform .bar:nth-child(12) { animation-delay: -1.6s; }
+        .waveform .bar:nth-child(13) { animation-delay: -1.4s; }
+        .waveform .bar:nth-child(14) { animation-delay: -1.2s; }
+        .waveform .bar:nth-child(15) { animation-delay: -1.0s; }
+        .waveform .bar:nth-child(16) { animation-delay: -0.8s; }
+        
+        @keyframes soundBars {
+            0% {
+                height: calc(10px * var(--bar-height));
+            }
+            100% {
+                height: calc(70px * var(--bar-height));
+            }
+        }
+        
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: rgba(108, 92, 231, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            z-index: 2;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+        
+        .play-button:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+            background: var(--primary-color);
+        }
+        
+        .play-button.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .audio-controls {
+            padding: 15px;
+            background: #1a1a1a;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 5px;
+            background: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        
+        .progress {
+            height: 100%;
+            background: var(--accent-color);
+            width: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .control-buttons {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .control-buttons i {
+            margin-right: 15px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .control-buttons i:hover {
+            color: var(--accent-color);
+        }
+        
+        .track-info {
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 15px;
+        }
+        
+        .track-name {
+            font-size: 14px;
+            margin-bottom: 3px;
+            color: white;
+        }
+        
+        .time {
+            font-size: 12px;
+            color: #aaa;
+        }
+        
+        .comparison-switch {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(0,0,0,0.05);
+            border-radius: 10px;
+        }
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            margin: 0 10px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+        
+        input:checked + .slider {
+            background-color: var(--accent-color);
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(30px);
+        }
+        
+        .slider.round {
+            border-radius: 34px;
+        }
+        
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        
+        .switch-label {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .switch-label.before {
+            color: var(--primary-color);
+        }
+        
+        .switch-label.after {
+            color: var(--accent-color);
+        }
+        
+        .process-timeline {
+            margin-top: 30px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 19px;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+            z-index: 0;
+        }
+        
+        .process-step {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.5s ease;
+        }
+        
+        .process-step.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            z-index: 1;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .step-content {
+            padding: 15px 20px;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .step-content h3 {
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+        
+        .step-content p {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .audio-visualizer {
+                height: 150px;
+            }
+            
+            .waveform {
+                width: 80%;
+            }
+            
+            .process-step {
+                padding-left: 40px;
+            }
+            
+            .step-number {
+                width: 30px;
+                height: 30px;
+                font-size: 14px;
+            }
+            
+            .process-timeline::before {
+                left: 14px;
+            }
+        }
+    </style>    
 </body>
 </html>
